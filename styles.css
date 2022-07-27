@@ -1,0 +1,124 @@
+body{
+    font-family: 'Roboto';
+}
+
+header{
+    color: white;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+footer{
+    text-align: center;
+    padding: 5%;
+}
+
+
+/* Section title */
+.nav-custom{
+    padding: .5% 5%;
+}
+.custom-nav-link{
+    margin: 0 15px;
+}
+#title{
+    background-color: #1A374D;
+}
+
+.container-header{
+    background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url("images/background.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 10%;   
+}
+.container-header span{
+    display: block;
+    padding-bottom: 5%;
+}
+
+.big-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold; 
+}
+
+#title-dinamic{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10%;
+
+}
+
+.button-slide:hover{
+    color: white;
+    opacity: 0.75;
+}
+
+/* Section skills and tools */
+#skills-tools{
+    background-color: white;
+    padding: 5% 15%;
+    text-align: center;
+}
+
+
+#skills-tools h3{
+    padding-top: 3%;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.custom-logo{
+    padding:5% 0;
+}
+
+
+/* Section Projects */
+#projects{
+    background-color: #27496D;
+    padding: 5% 15%;
+    text-align: center;
+    
+}
+#projects .big-title{
+    color: white;
+    padding-bottom: 5%;
+    
+}
+
+/* footer Section */
+.footer-section{
+    color: gray;
+    display: block;
+}
+.container-footer-image{
+    padding-bottom: 3%;
+}
+.footer-me-image{
+    border-radius: 100%;
+    width: 10%;
+    
+}
+.icon-footer{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:600px) {
+    .custom-logo img{
+        width: 25%;
+    }
+    .card-custom{
+        padding-bottom: 10%;
+    }
+}

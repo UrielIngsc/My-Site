@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+   
+    <!-- BootStrapScripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- FontsAwesome -->
+    <script src="https://kit.fontawesome.com/b8b6313378.js" crossorigin="anonymous"></script>
+    <title>Uriel Galindo</title>
+</head>
+<body>
+    <!-- Main section -->
+    <main>
+        <section id="title" class="espacing">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-background navbar-dark nav-custom">
+                    <a class="navbar-brand">Uriel Galindo</a>
+              
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+              
+                    <div class="collpase navbar-collapse" id ="navbarTogglerDemo01">
+                        
+                    <ul class="navbar-nav ms-auto">
+                       <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#skills-tools" >Habilidades</a>
+                       </li>
+              
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#projects">Projectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="#cta">Contactame</a>
+                        </li>
+                    </ul>
+              
+                    </div>
+                    
+                </nav>
+            </div>
+            <div class="container-header">
+                <header>
+                    <h1 class="big-title">Hola! Soy Uriel Galindo </h1>
+                    <h2 id="title-dinamic"></h2>
+                    <span>"Si puedes imaginarlo puedes programarlo"-Aleandro Taboada</span>
+                    <a class = "button-slide" href="#skills-tools"></a>
+                </header>
+            </div>
+            
+            
+        </section>
+
+        <section id="skills-tools">
+            <h2 class="big-title">Desarrollo web</h2>
+            <h3>Front-end</h3>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 custom-logo">
+                    <img src="images/html-5.png" alt="html-logo">
+                    <p>HTML</p>
+                </div>
+                <div class="col-lg-3 col-md-6 custom-logo">
+                    <img src="images/css-3.png" alt="css-logo">
+                    <p>CSS</p>
+                </div>
+                <div class="col-lg-3 col-md-6 custom-logo">
+                    <img src="images/bootstrap.png" alt="bootstrap-logo">
+                    <p>BootStrap</p>
+                </div>
+                <div class="col-lg-3 col-md-6 custom-logo">
+                    <img src="images/js.png" alt="js-logo">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            
+            
+            <!-- <p>React</p>
+
+            <h3>Back-end</h3>
+            <p>Node.js</p>
+            <p>Django</p> -->
+            <h3>Lenguajes Adicionales</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 custom-logo">
+                    <img src="images/java.png" alt="html-logo">
+                    <p>Java</p>
+                </div>
+                <div class="col-lg-6 col-md-6 custom-logo">
+                    <img src="images/python.png" alt="css-logo">
+                    <p>Python</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <h2 class="big-title">Portafolio</h2>
+            <div class="row">
+                <div class="col-lg-6 card-custom">
+                    <div class="card h-100 ">
+                        <div class="card-header ">
+                            <a href="https://urielingsc.github.io/DrumKit/">
+                                <img class="card-img-top" src="images/drum-kit.png" alt="drum-kit-image">
+                            </a>
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Drum Kit</h4>
+                            <p>Recrea una bateria simple que puede ser activada pulsando los botones o mediante el teclado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 card-custom">
+                    <div class="card h-100 ">
+                        <div class="card-header ">
+                            <a href="https://urielingsc.github.io/Calculator-step-1/">
+                                <img class="card-img-top" src="images/caculadora.png" alt="calculadora-image">
+                            </a>
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4>Calculadora simple</h4>
+                            <p>Calculadora hecha con html, css y javaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </section>
+        
+    </main>
+
+    <!-- Footer section -->
+    <footer id="cta">
+
+        <div class="row">
+            
+            <div class="col-lg-12 custom-footer">
+                <div class="container-footer-image">
+                    <img class="footer-me-image" src="images/Uriel-me.jpg" alt="yo-image">
+                </div>
+                <h5>Uriel Emiliando Galindo López</h5>
+                <h5>Programador | Diseñador web</h5>
+                <h5>ugalindo448@gmail.com</h5>     
+                <h5>©Copyright Uriel Galindo</h5>
+                <a class="icon-footer" href="https://github.com/UrielIngsc"><i class="fa-brands fa-github fa-3x"></i></a>
+                <a class="icon-footer" href="https://instagram.com/urielgldev?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </div>
+            
+        </div>
+        
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
