@@ -24,3 +24,9 @@ if($(window).width() > 800){
         icons[i].classList.add("fa-2x");    
     }
 }
+else{
+    let icons = document.querySelectorAll("#custom-icon");
+    for (let i = 0; i < icons.length; i++) {
+        icons[i].classList.add("fa-2x");  
+    }
+}
