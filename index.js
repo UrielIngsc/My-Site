@@ -17,3 +17,10 @@ setTimeout(function(){
     let icon = document.querySelector(".button-slide");
     icon.innerHTML = "<i class='fa-solid fa-angles-down fa-3x '></i>";
 },2800);
+
+if($(window).width() > 800){
+    let icons = document.querySelectorAll("#custom-icon");
+    for (let i = 0; i < icons.length; i++) {
+        icons[i].classList.add("fa-2x");    
+    }
+}
