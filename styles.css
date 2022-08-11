@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    /* box-sizing: border-box; */
+}
 body{
     font-family: 'Roboto';
 }
@@ -21,14 +25,67 @@ footer{
     padding: 5%;
 }
 
+/* section navl */
+.container-nav{
+    background-color: #1a1e22;
+    height: 70px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #d8d2cc;
+}
+
+.nav-logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 3%;
+    line-height: 70px;
+    width: max-content;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 3%;
+    list-style: none;
+}
+
+.nav-menu-items{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    line-height: 70px;
+    width: max-content;
+}
+
+.nav-menu-links{
+    padding: 3% 4%;
+    border-radius: 3%;
+}
+
+.nav-menu-links:hover{
+    background-color: #272d33;
+    transition: .5s;
+}
+
+.nav-toggle{
+    color: #d8d2cc;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 4%;
+    line-height: 50px;
+    display: none;
+}
 
 /* Section title */
-.nav-custom{
-    padding: .5% 5%;
-}
-.custom-nav-link{
-    margin: 0 15px;
-}
+
 #title{
     background-color: #1A374D;
 }
@@ -61,13 +118,20 @@ footer{
 .button-slide:hover{
     color: white;
     opacity: 0.75;
+    transition: .3s;
 }
 
 /* Section skills and tools */
+
 #skills-tools{
     background-color: white;
     padding: 5% 15%;
     text-align: center;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 
@@ -85,15 +149,26 @@ footer{
 
 /* Section Projects */
 #projects{
-    background-color: #27496D;
-    padding: 5% 15%;
+    background-color: #1a1e22;
+    padding: 5% 10%;
     text-align: center;
-    
+    color: white;
+}
+
+
+.card{
+    background-color: #d8d2cc;
+    margin: 5%;
+    padding: 5%;
+    color: #494e54;
 }
 #projects .big-title{
     color: white;
     padding-bottom: 5%;
     
+}
+#projects img{
+    width: 100%;
 }
 
 /* footer Section */
@@ -114,11 +189,58 @@ footer{
     margin: 0 10px;
 }
 
-@media screen and (max-width:600px) {
-    .custom-logo img{
-        width: 25%;
+@media screen and (max-width: 768px){
+    .container-nav{
+        background-color: #1a1e22;
+        height: 50px;
     }
-    .card-custom{
-        padding-bottom: 10%;
+    .nav-logo{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0 2%;
+        line-height: 50px;
+        width: max-content;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2%;
+        background-color: #494e54;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 2% 0; 
+        overflow-y: auto; 
+        left:100%;
+        transition: top 0,3s;
+    }
+    .nav-menu-items{
+        font-size: 1rem;
+        line-height: 50px;
+    }
+    .nav-menu-links:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: #1a1e22;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-menu_visible{
+        left:0;
+    }
+
+    .container-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #projects .container-grid{
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container-grid{
+        display: block;
     }
 }
