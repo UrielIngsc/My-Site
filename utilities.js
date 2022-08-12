@@ -28,9 +28,20 @@ function writeText(){
     }
     
 }
-
+const navMenu = document.querySelector(".nav-menu");
 document.querySelector(".nav-toggle").addEventListener("click", ()=>{
-    document.querySelector(".nav-menu").classList.toggle("nav-menu_visible");
+    navMenu.classList.toggle("nav-menu_visible");
+
+    if(navMenu.classList.contains("nav-menu_visible")){
+        
+        let navItems = document.querySelectorAll(".nav-menu-items");
+
+        for (let i = 0; i < navItems.length; i++) {
+            const element = navItems[i].addEventListener("click", ()=>{
+                navMenu.classList.remove("nav-menu_visible");
+            })
+        }
+    }
 })
 
 writeText();
